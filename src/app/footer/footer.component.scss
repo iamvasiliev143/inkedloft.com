@@ -1,0 +1,28 @@
+footer {
+  padding: 2rem 0;
+
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #000;
+
+  .menu {
+    margin: 0 -.5rem;
+
+    li {
+      margin: 0 .5rem;
+    }
+
+    &_social {
+      a {
+        font-size: 1.5rem;
+
+        &:hover {
+          border-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+
+

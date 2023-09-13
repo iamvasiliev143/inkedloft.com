@@ -1,0 +1,11 @@
+<div class="good">
+  <img class="good__image" [src]="'assets/images/tables/' + good.image" [alt]="good.title" />
+
+  <h3 class="good__title">
+    {{ good.title }}
+  </h3>
+
+  <div class="good__price">
+    {{ good.price | currency }}
+  </div>
+</div>

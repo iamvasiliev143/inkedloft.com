@@ -1,0 +1,29 @@
+.good {
+  margin-top: 2rem;
+
+  &__image {
+    height: 300px;
+    width: 100%;
+
+    object-fit: cover;
+  }
+
+  &__title,
+  &__price {
+    text-align: center
+  }
+
+  &__title {
+    margin-top: 1rem;
+
+    color: #000;
+    font-weight: 300;
+  }
+
+  &__price {
+    margin-top: .75rem;
+
+    color: #00000075;
+    font-size: .8rem;
+  }
+}
