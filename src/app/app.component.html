@@ -3,11 +3,11 @@
 
   <section class="promo">
     <div class="content row">
-      <div class="promo__big col-6">
+      <div class="promo__big col-sm-12 col-lg-6">
         <img [src]="'/assets/images/tables/sea_depth2.jpg'" alt="" />
       </div>
 
-      <div class="promo__small col-6">
+      <div class="promo__small col-sm-12 col-lg-6">
         <img [src]="'/assets/images/tables/ffff.jpg'" alt="" />
         <img [src]="'/assets/images/tables/dddd.jpg'" alt="" />
       </div>
@@ -18,7 +18,7 @@
     <h2 class="title">Shop</h2>
 
     <div class="content row">
-      <app-good *ngFor="let good of goods" [good]="good" class="col-3">
+      <app-good *ngFor="let good of goods" [good]="good" class="col-sm-12 col-md-6 col-lg-3">
       </app-good>
     </div>
   </section>
@@ -29,11 +29,11 @@
 
     <section class="promo">
       <div class="content row">
-        <div class="promo__big col-6">
+        <div class="promo__big col-sm-12 col-lg-6">
           <img [src]="'/assets/images/tables/1big.png'" alt="" />
         </div>
 
-        <div class="promo__small col-6">
+        <div class="promo__small col-sm-12 col-lg-6">
           <img [src]="'/assets/images/tables/2small.png'" alt="" />
           <img [src]="'/assets/images/tables/3small.png'" alt="" />
         </div>
