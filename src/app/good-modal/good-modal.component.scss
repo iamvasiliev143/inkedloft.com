@@ -1,0 +1,36 @@
+.good {
+  padding: 50px;
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 100;
+
+    text-align: center;
+  }
+
+  &__price {
+    margin: 20px 0;
+    font-size: 2rem;
+    font-weight: 300;
+
+  }
+}
+
+.characteristics {
+  display: flex;
+
+  & + & {
+    margin-top: 10px;
+  }
+
+
+  &__title {
+    font-weight: 300;
+  }
+
+  &__value {
+    margin-left: 5px;
+
+    font-weight: 400;
+  }
+}

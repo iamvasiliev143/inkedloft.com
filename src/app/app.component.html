@@ -15,17 +15,64 @@
   </section>
 
   <section class="goods">
-    <h2 class="title">Shop</h2>
+    <h2 class="title">Журнальні столи</h2>
 
     <div class="content row">
-      <app-good *ngFor="let good of goods" [good]="good" class="col-sm-12 col-md-6 col-lg-3">
-      </app-good>
+      <swiper-container
+        navigation="true"
+        slides-per-view="3"
+        speed="500"
+        loop="true"
+        css-mode="true"
+      >
+        <swiper-slide *ngFor="let good of coffeeTables">
+          <app-good [good]="good" class="col-sm-12 col-md-6 col-lg-3">
+          </app-good>
+        </swiper-slide>
+      </swiper-container>
     </div>
   </section>
 
+  <section class="goods">
+    <h2 class="title">Кухонні столи</h2>
+
+    <div class="content row">
+      <swiper-container
+        navigation="true"
+        slides-per-view="3"
+        speed="500"
+        loop="true"
+        css-mode="true"
+      >
+        <swiper-slide *ngFor="let good of kitchenTables">
+          <app-good [good]="good" class="col-sm-12 col-md-6 col-lg-3">
+          </app-good>
+        </swiper-slide>
+      </swiper-container>
+    </div>
+  </section>
+
+<!--  <section class="goods">-->
+<!--    <h2 class="title">Опори до столів</h2>-->
+
+<!--    <div class="content row">-->
+<!--      <swiper-container-->
+<!--        navigation="true"-->
+<!--        slides-per-view="3"-->
+<!--        speed="500"-->
+<!--        loop="true"-->
+<!--        css-mode="true"-->
+<!--      >-->
+<!--        <swiper-slide *ngFor="let good of goods">-->
+<!--          <app-good [good]="good" class="col-sm-12 col-md-6 col-lg-3">-->
+<!--          </app-good>-->
+<!--        </swiper-slide>-->
+<!--      </swiper-container>-->
+<!--    </div>-->
+<!--  </section>-->
+
   <section>
     <h2 class="title">Team</h2>
-
 
     <section class="promo">
       <div class="content row">

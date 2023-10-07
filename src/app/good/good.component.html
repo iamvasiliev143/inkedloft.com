@@ -1,4 +1,4 @@
-<div class="good">
+<div class="good" (click)='openModal(good)'>
   <img class="good__image" [src]="'assets/images/tables/' + good.image" [alt]="good.title" />
 
   <h3 class="good__title">
@@ -6,6 +6,6 @@
   </h3>
 
   <div class="good__price">
-    {{ good.price | currency }}
+    {{ localCurrencyPipe.transformCurrency(good.price, good.currency) }}
   </div>
 </div>

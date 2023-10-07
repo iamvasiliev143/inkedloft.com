@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col-6">
+    <img [src]="'assets/images/tables/' + good.image" alt="" />
+  </div>
+
+  <div class="col-6 good">
+    <div class="good__title">
+      {{ good.title }}
+    </div>
+
+    <div class="good__price">
+      {{ localCurrencyPipe.transformCurrency(good.price, good.currency) }}
+    </div>
+
+    <div class="row">
+      <div class="col-6">
+        <div *ngIf="good['length']" class="characteristics">
+          <div class="characteristics__title">Довжина</div>
+
+          <div class="characteristics__value">{{ good["length"] }} см</div>
+        </div>
+
+        <div *ngIf="good['length']" class=" characteristics">
+          <div class="characteristics__title">Ширина</div>
+
+          <div class="characteristics__value">{{ good["width"] }} см</div>
+        </div>
+
+        <div *ngIf="good['length']" class="characteristics">
+          <div class="characteristics__title">Висота</div>
+
+          <div class="characteristics__value">{{ good["height"] }} см</div>
+        </div>
+
+        <div *ngIf="good['wood']" class="characteristics">
+          <div class="characteristics__title">Дерево</div>
+
+          <div class="characteristics__value">{{ good["wood"] }}</div>
+        </div>
+
+        <div *ngIf="good['covering']" class="characteristics">
+          <div class="characteristics__title">Покриття</div>
+
+          <div class="characteristics__value">{{ good["covering"] }}</div>
+        </div>
+      </div>
+
+      <div class="col-6"></div>
+    </div>
+  </div>
+</div>
