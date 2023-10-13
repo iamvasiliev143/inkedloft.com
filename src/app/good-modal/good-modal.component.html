@@ -12,15 +12,55 @@
       {{ localCurrencyPipe.transformCurrency(good.price, good.currency) }}
     </div>
 
+    <div class="row colors">
+      <div class="colors__huys row">
+        <div class="colors__huy1 col-4">В наявності</div>
+        <div class="colors__huy2 col-6">Під замовлення 14 днів</div>
+      </div>
+
+      <div class="col-3">
+        <div class="color">
+          <img src="assets/images/colors/1.png" alt="" />
+          <div class="color__title">Горіх</div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="color">
+          <img src="assets/images/colors/2.png" alt="" />
+          <div class="color__title">Ясен</div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="color">
+          <img src="assets/images/colors/3.png" alt="" />
+          <div class="color__title">Дуб</div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="color">
+          <img src="assets/images/colors/4.png" alt="" />
+          <div class="color__title">Клен</div>
+        </div>
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-6">
+
+        <div class='ukraine_title'>Характеристики</div>
+
+
+
         <div *ngIf="good['length']" class="characteristics">
           <div class="characteristics__title">Довжина</div>
 
           <div class="characteristics__value">{{ good["length"] }} см</div>
         </div>
 
-        <div *ngIf="good['length']" class=" characteristics">
+        <div *ngIf="good['length']" class="characteristics">
           <div class="characteristics__title">Ширина</div>
 
           <div class="characteristics__value">{{ good["width"] }} см</div>
@@ -45,7 +85,27 @@
         </div>
       </div>
 
-      <div class="col-6"></div>
+      <div class="col-6">
+        <div class="huys d-flex align-items-center">
+          <img class="huys__image" src="assets/images/huy/1.png" />
+          <div class="huys__value">Гарантія 2 роки</div>
+        </div>
+
+        <div class="huys d-flex align-items-center">
+          <img class="huys__image" src="assets/images/huy/2.png" />
+          <div class="huys__value">Авторський дизайн</div>
+        </div>
+
+        <div class="huys d-flex align-items-center">
+          <img class="huys__image" src="assets/images/huy/3.png" />
+          <div class="huys__value">Бескоштовна доставка</div>
+        </div>
+
+        <div class="huys d-flex align-items-center">
+          <img class="huys__image" src="assets/images/huy/4.png" />
+          <div class="huys__value">Власне виробництво</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -129,8 +129,6 @@ export class AppComponent {
       guarantee: '2 роки',
       originalDesign: true,
       freeDelivery: true,
-
-
     },
 
     {
@@ -251,7 +249,6 @@ export class AppComponent {
       guarantee: '2 роки',
       originalDesign: true,
       freeDelivery: true,
-
     },
 
     {
@@ -327,7 +324,7 @@ export class AppComponent {
     },
   ];
 
-  public kitchenTables = [
+  public readonly kitchenTables = [
     {
       title: 'Стіл амбарний',
       image: 'sea_depth.jpg',
@@ -427,6 +424,5 @@ export class AppComponent {
       freeDelivery: true,
       ownProduction: true,
     },
-
-    ];
+  ];
 }

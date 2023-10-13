@@ -12,7 +12,6 @@
     margin: 20px 0;
     font-size: 2rem;
     font-weight: 300;
-
   }
 }
 
@@ -23,7 +22,6 @@
     margin-top: 10px;
   }
 
-
   &__title {
     font-weight: 300;
   }
@@ -33,4 +31,66 @@
 
     font-weight: 400;
   }
+
+}
+
+
+
+.colors {
+  margin: 0 0 30px 0;
+  padding: 40px 20px;
+  border: 1px solid #c2c2c2;
+
+  position: relative;
+
+  &__huys{
+    position: absolute;
+    top: -12px;
+    height: 24px;
+  }
+
+  &__huy1 {
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #A0D37F;
+  }
+
+  &__huy2 {
+    padding: 4px 8px;
+    text-align: center;
+    color: #C2C2C2;
+    background-color: #fff;
+  }
+
+  .color {
+    &__title {
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: 300;
+      text-align: center;
+      opacity: .6;
+    }
+  }
+}
+
+
+.huys {
+  &__image {
+    height: 36px;
+    width: auto;
+
+    margin-right: 20px;
+  }
+
+  & + & {
+    margin-top: 10px;
+  }
+}
+
+
+.ukraine_title {
+  font-size: 24px;
+margin-bottom: 20px;
 }
